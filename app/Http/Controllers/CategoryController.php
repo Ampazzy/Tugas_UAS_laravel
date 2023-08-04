@@ -43,11 +43,11 @@ class CategoryController extends Controller
 
     public function show(string $id)
     {
-        //get post by ID
-        $post = Post::findOrFail($id);
+        // //get post by ID
+        // $post = Post::findOrFail($id);
 
-        //render view with post
-        return view('categories.show', compact('post'));
+        // //render view with post
+        // return view('categories.show', compact('post'));
     }
 
 

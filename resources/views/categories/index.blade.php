@@ -41,8 +41,8 @@
                         {{ auth()->user()->name }}
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li> <a href="{{ route('categories.show', auth()->user()->id) }}"
-                                class="dropdown-item">Profile</a></li>
+                        <li> <a href="{{ route('profiles.index') }}" class="dropdown-item">Profile</a>
+                        </li>
                         @can('admin')
                             <li><a href="{{ route('categories.create') }}" class="dropdown-item">Tambah kategori</a></li>
                         @endcan

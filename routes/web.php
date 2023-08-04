@@ -6,7 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\MypostController;
-
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,6 +29,7 @@ Route::resource('/posts', PostController::class)->middleware('admin');
 Route::resource('/categories', CategoryController::class)->middleware('admin');
 Route::resource('/mypost', MypostController::class)->middleware('admin');
 
+Route::get('/profiles', [ProfileController::class, 'index'])->middleware('admin')->name('profiles.index');
 
 Route::post('/logout', [LoginController::class, 'logout']);
 
