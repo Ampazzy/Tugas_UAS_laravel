@@ -57,7 +57,7 @@
                             <div style="text-align: center" class="mt-5">
                                 <a href="{{ asset('storage/posts/' . $post->file_buku) }}"
                                     class="btn btn-success btn-md mx-5" target="_blank">Download</a>
-                                <a href="{{ route('exportpdf', ['id' => $post->id]) }}" class="btn btn-sm btn-primary">
+                                <a href="{{ route('exportpdf', ['id' => $post->id]) }}" class="btn btn-md btn-primary">
                                     to pdf
                                 </a>
                                 <a href="/posts" class="btn btn-danger btn-md mx-5">Kembali</a>
